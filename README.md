@@ -1,0 +1,2 @@
+# Incorrect Handling of Falsy Values in Function Parameters
+This bug demonstrates an error in a function's handling of falsy values as input parameters.  The `foo` function is intended to add two numbers together; however, it only explicitly checks for strict equality with 0 and doesn't address other falsy values like empty strings or `false` which will return NaN.  The solution demonstrates the correct way to handle these scenarios using loose comparison or explicit checks for all falsy values.
